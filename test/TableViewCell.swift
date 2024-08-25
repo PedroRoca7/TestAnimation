@@ -13,6 +13,7 @@ final class TableViewCell: UITableViewCell {
     
     lazy var viewScreen: ViewCell = {
         let element = ViewCell()
+        element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
     
@@ -29,10 +30,10 @@ final class TableViewCell: UITableViewCell {
     }
     
     func prepareCell(pokemon: PokemonModel) {
-        viewScreen.idLabel.text = String(pokemon.id)
-        viewScreen.nameLabel.text = pokemon.name
-        viewScreen.typeLabel.text = pokemon.type
-        viewScreen.descriptionLabel.text = pokemon.description
+        viewScreen.idLabel.text = String("Id: \(pokemon.id)")
+        viewScreen.nameLabel.text = String("Type: \(pokemon.type)")
+        viewScreen.typeLabel.text = "About: \(pokemon.about)"
+        viewScreen.descriptionLabel.text = String("Amount: \(pokemon.amount)")
     }
     
     func buildHierarchy() {

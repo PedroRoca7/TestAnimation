@@ -5,14 +5,10 @@
 //  Created by Pedro Henrique on 30/04/24.
 //
 
-import Combine
 import UIKit
 
 class HomeViewController: UIViewController {
     
-    // MARK: - AnyCancellable
-    
-    var cancellables = Set<AnyCancellable>()
     
     // MARK: - Initialization
     
@@ -41,7 +37,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 }
 

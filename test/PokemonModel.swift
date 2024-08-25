@@ -1,5 +1,5 @@
 //
-//  CepModel.swift
+//  PokemonModel.swift
 //  test
 //
 //  Created by Pedro Henrique on 27/02/24.
@@ -7,14 +7,12 @@
 
 import Foundation
 
+typealias PokemonsModel = [PokemonModel]
 
-
-struct CepModel: Decodable{
-    
-    var logradouro: String
-    var bairro: String
-    var localidade: String
-    var uf: String
-    var ddd: String
+struct PokemonModel: Codable {
+    let id: Int
+    let type: Int
+    let about: String
+    let amount: Double
 }
 

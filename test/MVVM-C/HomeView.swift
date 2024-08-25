@@ -14,9 +14,10 @@ final class HomeView: UIView {
     
     // MARK: - Inits
     
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -24,7 +25,7 @@ final class HomeView: UIView {
     }
 }
 
-extension HomeView: ViewCodeUIView {
+extension HomeView {
 
     // MARK: - Add Elements e Constraints
     

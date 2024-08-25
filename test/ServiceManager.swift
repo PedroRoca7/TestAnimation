@@ -23,7 +23,7 @@ final class ServiceManager {
     }
     
     private var cancellables = Set<AnyCancellable>()
-    private let baseURL = ""
+    private let baseURL = "https://api-bank-iota.vercel.app/extrato"
     
     func getData<T: Decodable>(type: T.Type) -> Future<[T], Error> {
         return Future<[T], Error> { [weak self] promise in
